@@ -3,7 +3,11 @@
 In this repository, it shows the cheat sheet about programming.
 
 # Linux
-[linux](Linux)
+[Linux](Linux)
+
+# Windows
+[Windows](Windows)
+
 
 # GStreamer
 [GStreamer](GStreamer)
