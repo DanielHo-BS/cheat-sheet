@@ -2,12 +2,17 @@
 
 In this repository, it shows the cheat sheet about programming.
 
-# Linux
-[Linux](Linux)
-
-# Windows
-[Windows](Windows)
+# [Linux](Linux)
 
 
-# GStreamer
-[GStreamer](GStreamer)
+# [Windows](Windows)
+
+
+
+# [GStreamer](GStreamer)
+
+# [Cpp](Cpp)
+
+# [C](C)
+
+# [Python](Python)
