@@ -53,7 +53,7 @@ Markdown支援有序清單和無序清單。
     **strong**
     __strong__
     
-# code
+# Code
 
 要標記一小段行內程式碼
 
