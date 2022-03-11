@@ -40,7 +40,7 @@ ln (link files) 一个非常重要命令，它的功能是為某個文件在另�
 
 ## Example
 
-    ln ../common common
+    ln -s ../common common
 
 
 
