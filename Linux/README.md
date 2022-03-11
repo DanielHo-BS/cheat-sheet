@@ -8,3 +8,5 @@ Here shows some cheat about Linux.
 [echo](echo.md)
 
 [smb](smb.md)
+
+[ln](ln.md)
