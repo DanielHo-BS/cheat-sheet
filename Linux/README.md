@@ -10,3 +10,5 @@ Here shows some cheat about Linux.
 [smb](smb.md)
 
 [ln](ln.md)
+
+[tr](tr.md)
