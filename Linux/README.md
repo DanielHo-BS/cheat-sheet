@@ -12,3 +12,5 @@ Here shows some cheat about Linux.
 [ln](ln.md)
 
 [tr](tr.md)
+
+[sed](sed.md)
