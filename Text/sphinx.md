@@ -10,13 +10,40 @@ rst to html or other
     make latexpdf
     make text
 
-## pdf generator
+## pdf
 
-### requiestment
+requiestment
 
     sudo app install latexmk
     sudo apt install texlive-latex-extra
 
-## command 
+command 
 
     make latexpdf
+
+
+## [docx](https://github.com/amedama41/docxbuilder)
+
+requiestment
+
+    pip install docxbuilder
+
+Add 'docxbuilder' to extensions configuration of conf.py:
+
+    extensions = ['docxbuilder']
+
+You can control the generated document by adding configurations into conf.py:
+
+    docx_documents = [
+        ('index', 'docxbuilder.docx', {
+            'title': project,
+            'creator': author,
+            'subject': 'A manual of docxbuilder',
+        }, True),
+    ]
+    docx_style = 'path/to/custom_style.docx'
+    docx_pagebreak_before_section = 1
+
+command
+
+    make docx
