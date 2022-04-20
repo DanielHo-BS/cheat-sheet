@@ -7,3 +7,5 @@ Here shows some cheat about **python**.
 # [function](function.md)
 
 # [object](object.md)
+
+# [daemon](daemon.md)
