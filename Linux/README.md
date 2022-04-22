@@ -14,3 +14,5 @@ Here shows some cheat about Linux.
 [tr](tr.md)
 
 [sed](sed.md)
+
+[system time](systemTime.md)
