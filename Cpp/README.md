@@ -2,6 +2,10 @@
 
 Here shows some cheat about **cpp**.
 
+# [Vector](vector.md)
+
+# Reference
+
 # [C++與演算法](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
 
 Basic C++ class with Algorithms.
