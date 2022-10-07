@@ -12,7 +12,7 @@ Anaconda是目前最受歡迎的Python數據科學(Data Science)平台，適用�
 
 # Create enviroment
 
-[建立環境教學] (https://medium.com/python4u/%E7%94%A8conda%E5%BB%BA%E7%AB%8B%E5%8F%8A%E7%AE%A1%E7%90%86python%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-b61fd2a76566)
+[建立環境教學](https://medium.com/python4u/%E7%94%A8conda%E5%BB%BA%E7%AB%8B%E5%8F%8A%E7%AE%A1%E7%90%86python%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-b61fd2a76566)
 
     conda create --name <env-name> python=<version>
     
