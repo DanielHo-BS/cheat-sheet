@@ -8,11 +8,28 @@ Anaconda是目前最受歡迎的Python數據科學(Data Science)平台，適用�
 
 [Anaconda](https://www.anaconda.com/download/)
 
-[安裝教學](https://medium.com/python4u/anaconda%E4%BB%8B%E7%B4%B9%E5%8F%8A%E5%AE%89%E8%A3%9D%E6%95%99%E5%AD%B8-f7dae6454ab6)
+[安裝教學 on windows](https://medium.com/python4u/anaconda%E4%BB%8B%E7%B4%B9%E5%8F%8A%E5%AE%89%E8%A3%9D%E6%95%99%E5%AD%B8-f7dae6454ab6)
+
+## On WSL
+
+```bash
+#Download Anaconda from web
+wget https://repo.anaconda.com/archive/Anaconda3-<version>-Linux-x86_64.sh
+
+#Install
+bash Anaconda3-<version>-Linux-x86_64.sh
+# Enter 'yes' to install
+
+#Add PATH
+export PATH=/home/<user>/anaconda3/bin:$PATH
+
+#Check version
+conda --version
+```
 
 # Create enviroment
 
-[建立環境教學] (https://medium.com/python4u/%E7%94%A8conda%E5%BB%BA%E7%AB%8B%E5%8F%8A%E7%AE%A1%E7%90%86python%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-b61fd2a76566)
+[建立環境教學](https://medium.com/python4u/%E7%94%A8conda%E5%BB%BA%E7%AB%8B%E5%8F%8A%E7%AE%A1%E7%90%86python%E8%99%9B%E6%93%AC%E7%92%B0%E5%A2%83-b61fd2a76566)
 
     conda create --name <env-name> python=<version>
     
