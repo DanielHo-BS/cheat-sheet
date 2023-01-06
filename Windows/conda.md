@@ -51,4 +51,11 @@ conda --version
 
     conda remove --name <env-name> <package>
 
+# Warning
 
+There was an error checking the latest version of pip.
+
+```bash
+sudo python3 -m pip install --upgrade pip
+pip install --upgrade pip
+```
