@@ -2,23 +2,24 @@
 
 In this repository, it shows the cheat sheet about programming.
 
-# [Linux](Linux)
+## [Linux](Linux)
 
+## [Windows](Windows)
 
-# [Windows](Windows)
+## [GStreamer](GStreamer)
 
-# [GStreamer](GStreamer)
+## [Cpp](Cpp)
 
-# [Cpp](Cpp)
+## [C](C)
 
-# [C](C)
+## [Python](Python)
 
-# [Python](Python)
+## [ROS](ROS)
 
-# [ROS](ROS)
+## [Makefile](Makefile)
 
-# [Makefile](Makefile)
+## [MySQL](MySQL)
 
-# [MySQL](MySQL)
+## [Git](Git)
 
-# [Git](Git)
+## [Text](Text)
