@@ -17,3 +17,5 @@ Here shows some cheat about **python**.
 ## [nilearn](nilearn.md)
 
 ## [pandas](pandas.md)
+
+## [pipreqs](pipreqs.md)
