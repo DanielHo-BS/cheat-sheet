@@ -1,5 +1,8 @@
 # [實驗室 server 使用說明](https://docs.google.com/document/u/0/d/1U1uzZTWjYY8kLMfY31sT_A96p7fq9sE59vgymjXeTIw/mobilebasic)
 
+1. [Website of Available Time](https://docs.google.com/spreadsheets/d/1tGYv3yq71k1NJwrsqBbNhtm5yznrwjBzZmHN8Un7nL0/edit?usp=sharing)
+2. [Application for Servers Usage](https://docs.google.com/forms/d/e/1FAIpQLScaPPzBJyftCCIUupadAXrIBWM88g8RqZZUW5wgnD-cM9bncw/viewform)
+
 **使用server前，請先上網登記使用時段!!**
 
 # Installation
