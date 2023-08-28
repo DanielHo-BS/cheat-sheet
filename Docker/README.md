@@ -4,6 +4,7 @@ Here will put show note about docker.
 
 - [Usage on WSL](./dockerWSL.md)
 - [Change the store path](./storePath.md)
+- [Command](#command)
 
 ## Introduction
 

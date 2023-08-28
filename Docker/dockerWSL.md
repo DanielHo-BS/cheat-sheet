@@ -7,6 +7,7 @@ Build and run Docker container with NVIDIA GPUs on WSL2.
 - Windows10
 - WSL2 (Ubuntu 22.04)
 - NVIDIA GeForce RTX 3060
+- Driver Version 536.23
 
 ## Method
 
@@ -123,3 +124,9 @@ torch.cuda.get_device_name(0)
 ```
 
 ![image](./images/testPytorch.png)
+
+## Reference
+
+- [【windows11】GPU+tensorflow環境をwsl2+dockerで実現する。](https://qiita.com/daikon/items/72b8e0215250b31676c8)
+- [用Docker執行pytorch/tensorflow，只要安裝nvidia driver即可](https://hackmd.io/@joshhu/Sy8MQetvS#%E7%94%A8Docker%E5%9F%B7%E8%A1%8Cpytorchtensorflow%EF%BC%8C%E5%8F%AA%E8%A6%81%E5%AE%89%E8%A3%9Dnvidia-driver%E5%8D%B3%E5%8F%AF)
+- [安裝 Docker® 及 nvidia-docker2](https://www.ibm.com/docs/zh-tw/maximo-vi/continuous-delivery?topic=planning-installing-docker-nvidia-docker2)
