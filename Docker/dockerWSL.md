@@ -102,7 +102,7 @@ device_lib.list_local_devices()
 - cudnn 7
 
 ```bash
-sudo docker run --gpus all -it tensorflow/tensorflow:latest-gpu bash
+sudo docker run --gpus all -it pytorch/pytorch:1.9.0-cuda10.2-cudnn7-devel bash
 ```
 
 Into the bash of container and run python
