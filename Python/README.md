@@ -21,3 +21,5 @@ Here shows some cheat about **python**.
 ## [pipreqs](pipreqs.md)
 
 ## [Debug](Debug.md)
+
+## [pytorch](pytorch.md)
