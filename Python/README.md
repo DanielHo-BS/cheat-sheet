@@ -19,3 +19,5 @@ Here shows some cheat about **python**.
 ## [pandas](pandas.md)
 
 ## [pipreqs](pipreqs.md)
+
+## [Debug](Debug.md)
