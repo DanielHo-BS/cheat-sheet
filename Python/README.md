@@ -1,4 +1,4 @@
-# Python 
+# Python
 
 Here shows some cheat about **python**.
 
@@ -23,3 +23,5 @@ Here shows some cheat about **python**.
 ## [Debug](Debug.md)
 
 ## [pytorch](pytorch.md)
+
+## [tqdm](tqdm.md)
