@@ -27,3 +27,7 @@ In this repository, it shows the cheat sheet about programming.
 ## [Paper](Paper)
 
 ## [Docker](Docker)
+
+## [Algorithm](Algorithm)
+
+## [Data Structure](DataStructures)
