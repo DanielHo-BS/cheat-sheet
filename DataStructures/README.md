@@ -8,10 +8,16 @@ Data structures are a way of organizing and storing data so that they can be acc
 
 7 common data structures:
 
-- Arrays
-- Linked Lists
-- HashMaps
-- Stacks
-- Queues
-- Trees
-- Graphs
+- [Arrays](./arrays.md)
+- [Linked Lists](./linkedLists.md)
+- [HashMaps](./hashMaps.md)
+- [Stacks](./stacks.md)
+- [Queues](./queues.md)
+- [Trees](./trees.md)
+- [Graphs](./graphs.md)
+
+## References
+
+- [資料結構&演算法筆記](https://clu.gitbook.io/data-structure-note/tree)
+- [Google Tech Dev Guide](https://techdevguide.withgoogle.com/paths/data-structures-and-algorithms/)
+- [W3Schools](https://www.w3schools.com/dsa/dsa_intro.php)
