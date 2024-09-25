@@ -8,12 +8,12 @@ Sorting algorithms are a set of instructions that take an array or list as an in
 
 | Algorithm | Best | Average | Worst | Space |
 | --- | --- | --- | --- | --- |
-| Bubble Sort | O(n) | O(n^2) | O(n^2) | O(1) |
-| Selection Sort | O(n^2) | O(n^2) | O(n^2) | O(1) |
-| Insertion Sort | O(n) | O(n^2) | O(n^2) | O(1) |
-| Merge Sort | O(n log n) | O(n log n) | O(n log n) | O(n) |
-| Quick Sort | O(n log n) | O(n log n) | O(n^2) | O(log n) |
-| Heap Sort | O(n log n) | O(n log n) | O(n log n) | O(1) |
+| [Bubble Sort ](./bubbleSort.md)| O(n) | O(n^2) | O(n^2) | O(1) |
+| [Selection Sort](./selectSort.md) | O(n^2) | O(n^2) | O(n^2) | O(1) |
+| [Insertion Sort](./insertSort.md) | O(n) | O(n^2) | O(n^2) | O(1) |
+| [Merge Sort](./mergeSort.md) | O(n log n) | O(n log n) | O(n log n) | O(n) |
+| [Quick Sort](./quickSort.md) | O(n log n) | O(n log n) | O(n^2) | O(log n) |
+| [Heap Sort](./heapSort.md) | O(n log n) | O(n log n) | O(n log n) | O(1) |
 
 
 ## Rule of Thumb
