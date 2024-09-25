@@ -37,3 +37,7 @@ Graph algorithms are a significant part of the algorithmic landscape and are cri
 ## Dynamic Programming
 
 Dynamic programming is a method for solving complex problems by breaking them down into simpler subproblems. It is applicable to problems exhibiting the properties of overlapping subproblems and optimal substructure.
+
+# Reference
+
+- [Data Structure and Algorithm](https://github.com/billryan/algorithm-exercise)
