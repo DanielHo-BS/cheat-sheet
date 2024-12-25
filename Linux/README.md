@@ -20,3 +20,5 @@ Here shows some cheat about Linux.
 [CAN bus](can.md)
 
 [chmod](chmod.md)
+
+[journactl](journactl.md)
