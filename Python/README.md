@@ -25,3 +25,5 @@ Here shows some cheat about **python**.
 ## [pytorch](pytorch.md)
 
 ## [tqdm](tqdm.md)
+
+## [pytest](pytest.md)
