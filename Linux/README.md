@@ -18,3 +18,5 @@ Here shows some cheat about Linux.
 [system time](systemTime.md)
 
 [CAN bus](can.md)
+
+[chmod](chmod.md)
