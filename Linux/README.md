@@ -22,3 +22,5 @@ Here shows some cheat about Linux.
 [chmod](chmod.md)
 
 [journactl](journactl.md)
+
+[ipmitool](ipmitool.md)
