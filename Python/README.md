@@ -29,3 +29,5 @@ Here shows some cheat about **python**.
 ## [pytest](pytest.md)
 
 ## [uv](uv.md)
+
+## [re](re.md)
