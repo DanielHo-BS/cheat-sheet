@@ -1,23 +1,21 @@
-# Cpp 
+# C++ Cheat Sheets
 
-Here shows some cheat about **cpp**.
+This directory contains quick references and useful links for C++ programming, including local notes and high-quality external resources.
 
-# [Vector](vector.md)
+---
 
-# Reference
+## Local Cheat Sheets
+- [Vector](vector.md): C++ vector usage and tips
+- [Daniel/C++ 10 days](https://github.com/DanielHo-BS/CPP.git): 10-day C++ learning challenge with code examples
 
-# [C++與演算法](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
+---
 
-Basic C++ class with Algorithms.
+## External References
+- [C++與演算法](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html): Basic C++ classes and algorithms (Chinese)
+- [CPlusPlusThings](https://github.com/Light-City/CPlusPlusThings): In-depth C++ topics and best practices
+- [TheAlgorithms /C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus): Collection of algorithms implemented in C++ (MIT License)
+- [changkun /modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial): Comprehensive modern C++ tutorial (up to C++20)
 
-# [CPlusPlusThings](https://github.com/Light-City/CPlusPlusThings)
+---
 
-10 days challenge with Cpp.
-
-#  [TheAlgorithms /C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus) 
-
-C-Plus-Plus 是收錄用 C++ 實現的各種演算法的集合，並按照 MIT 許可協議進行授權。
-
-#  [changkun /modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial) 
-
-modern-cpp-tutorial 是現代 C++ 教程，它的目的是提供關於現代 C++（2020 年前）的相關特性的全面介紹。
+Browse these resources for code examples, explanations, and best practices in C++.
