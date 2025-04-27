@@ -1,26 +1,28 @@
-# Linux
-Here shows some cheat about Linux.
+# Linux Cheat Sheets
 
-[FSYNC](fsync.md)  
+This directory contains quick references and cheat sheets for common Linux commands, tools, and system administration tasks. Use these to quickly look up usage patterns, options, and best practices.
 
-[RSYNC](rsync.md)
+---
 
-[echo](echo.md)
+## File Operations
+- [FSYNC](fsync.md): File synchronization and data integrity
+- [RSYNC](rsync.md): Fast file transfer and synchronization
+- [ln](ln.md): Creating hard and symbolic links
+- [chmod](chmod.md): File and directory permissions
 
-[smb](smb.md)
+## Text Processing
+- [echo](echo.md): Print text and variables
+- [tr](tr.md): Translate or delete characters
+- [sed](sed.md): Stream editor for filtering and transforming text
 
-[ln](ln.md)
+## System & Networking
+- [smb](smb.md): Samba file sharing
+- [system time](systemTime.md): Managing system date and time
+- [CAN bus](can.md): Controller Area Network bus commands
+- [ipmitool](ipmitool.md): IPMI management and server control
+- [journactl](journactl.md): Query and view systemd logs
+- [Crontab](crontab.md): Scheduling tasks with cron
 
-[tr](tr.md)
+---
 
-[sed](sed.md)
-
-[system time](systemTime.md)
-
-[CAN bus](can.md)
-
-[chmod](chmod.md)
-
-[journactl](journactl.md)
-
-[ipmitool](ipmitool.md)
+Browse each cheat sheet for quick command examples, explanations, and best practices.
