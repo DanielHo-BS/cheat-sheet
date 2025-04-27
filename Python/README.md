@@ -27,3 +27,5 @@ Here shows some cheat about **python**.
 ## [tqdm](tqdm.md)
 
 ## [pytest](pytest.md)
+
+## [uv](uv.md)
