@@ -15,6 +15,7 @@ This directory contains quick references and cheat sheets for common Linux comma
 - [tr](tr.md): Translate or delete characters
 - [sed](sed.md): Stream editor for filtering and transforming text
 - [jq](jq.md): Command-line JSON processor
+- [xargs](xargs.md): Build and execute command lines from input
 
 ## System & Networking
 - [smb](smb.md): Samba file sharing
