@@ -1,33 +1,34 @@
-# Cheat Sheet
+# Cheat Sheet Repository
 
-In this repository, it shows the cheat sheet about programming.
+This repository contains concise cheat sheets and quick references for programming, operating systems, tools, and more. Use these to quickly look up commands, code patterns, and best practices.
 
-## [Linux](Linux)
+---
 
-## [Windows](Windows)
+## Operating Systems
+- [Linux](Linux): Linux commands, scripting, and tips
+- [Windows](Windows): Windows commands, PowerShell, and shortcuts
 
-## [GStreamer](GStreamer)
+## Programming Languages
+- [Cpp](Cpp): C++ syntax, STL, and best practices
+- [C](C): C language basics and patterns
+- [Python](Python): Python libraries, modules, and tools
 
-## [Cpp](Cpp)
+## Tools & Frameworks
+- [GStreamer](GStreamer): Multimedia framework usage
+- [ROS](ROS): Robot Operating System quick reference
+- [Makefile](Makefile): Makefile syntax and usage
+- [Docker](Docker): Containerization and Docker commands
+- [Git](Git): Version control with Git
 
-## [C](C)
+## Databases & Data
+- [MySQL](MySQL): MySQL commands and queries
+- [Text](Text): Text processing and manipulation
+- [Paper](Paper): Paper writing and formatting tips
 
-## [Python](Python)
+## Algorithms & Data Structures
+- [Algorithm](Algorithm): Common algorithms and patterns
+- [Data Structure](DataStructures): Data structure usage and examples
 
-## [ROS](ROS)
+---
 
-## [Makefile](Makefile)
-
-## [MySQL](MySQL)
-
-## [Git](Git)
-
-## [Text](Text)
-
-## [Paper](Paper)
-
-## [Docker](Docker)
-
-## [Algorithm](Algorithm)
-
-## [Data Structure](DataStructures)
+Browse each section for quick code examples, explanations, and best practices.
