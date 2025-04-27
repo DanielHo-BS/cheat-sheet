@@ -19,6 +19,7 @@ This directory contains concise cheat sheets and quick references for common Pyt
 - [pytest](pytest.md): Python testing framework
 - [re](re.md): Regular expressions in Python
 - [requests](requests.md): HTTP requests made easy
+- [paramiko](paramiko.md): SSHv2 protocol
 
 ## Tools & Utilities
 
