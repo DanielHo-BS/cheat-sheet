@@ -19,6 +19,7 @@ This repository contains concise cheat sheets and quick references for programmi
 - [Makefile](Makefile): Makefile syntax and usage
 - [Docker](Docker): Containerization and Docker commands
 - [Git](Git): Version control with Git
+- [Cloudflare](Cloudflare): DNS, CDN, security and performance optimization
 
 ## Databases & Data
 - [MySQL](MySQL): MySQL commands and queries
