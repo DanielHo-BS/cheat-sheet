@@ -1,149 +1,130 @@
 # Docker
 
-Here will put show note about docker.
+A comprehensive guide to Docker fundamentals and usage.
 
-- [Usage on WSL](./dockerWSL.md)
-- [Change the store path](./storePath.md)
-- [Command](#command)
+## Configuration Guides
+
+- [Docker on WSL](./dockerWSL.md) - Setup and usage on Windows Subsystem for Linux
+- [Change Storage Path](./storePath.md) - Modify where Docker stores its data
+- [Docker Compose](./compose.md) - Multi-container Docker applications
+
+## Contents
+
+- [Docker](#docker)
+  - [Configuration Guides](#configuration-guides)
+  - [Contents](#contents)
+  - [Introduction](#introduction)
+    - [Core Concepts](#core-concepts)
+      - [Image](#image)
+      - [Container](#container)
+      - [Repository](#repository)
+  - [Installation](#installation)
+    - [Windows, macOS, or Linux Desktop](#windows-macos-or-linux-desktop)
+    - [Ubuntu Server (CLI)](#ubuntu-server-cli)
+      - [Method 1: Using apt](#method-1-using-apt)
+      - [Method 2: Using installation script](#method-2-using-installation-script)
+  - [Common Commands](#common-commands)
+    - [Image Management](#image-management)
+    - [Container Management](#container-management)
+  - [References](#references)
 
 ## Introduction
 
-- Image
-- Container
-- Repository
+Docker is a platform for developing, shipping, and running applications in isolated environments called containers.
 
-### Image
+### Core Concepts
 
-An image is a read-only template with instructions for creating a Docker container.
+#### Image
+An image is a read-only template containing instructions for creating a Docker container. Images include the application code, libraries, dependencies, tools, and other files needed to run an application.
 
-### Container
+#### Container
+A container is a runnable instance of an image. It's a lightweight, standalone, executable package that includes everything needed to run an application. Containers isolate software from its surroundings and ensure it works uniformly across different environments.
 
-A container is a runnable instance of an image.
+#### Repository
+A repository is a storage location for Docker images.
 
-Like a sample environment like Linux.
+- **Public repositories**: [Docker Hub](https://hub.docker.com/) and [Docker Pool](http://www.dockerpool.com/)
+- **Private repositories**: Self-hosted or cloud-based private registries
 
-A container is defined by its image as well as any configuration options you provide to it when you create or start it.
+## Installation
 
-### Repository
+### Windows, macOS, or Linux Desktop
+Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) for a complete Docker development environment with GUI.
 
-Repository is a place where image files stored.
+### Ubuntu Server (CLI)
 
-- Public: [Docker Hub](https://hub.docker.com/) & [Docker pool](http://www.dockerpool.com/)
-- Private
+#### Method 1: Using apt
+```bash
+sudo apt update
+sudo apt install -y docker.io
+sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
+sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker
+```
 
-## Install
+#### Method 2: Using installation script
+```bash
+curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+```
 
-- Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/) on Windows, MAC or Linux
-- Using Bash Command on Ubuntu
-  - By default
-  
-  ```bash
-  sudo apt update
-  sudo apt install -y docker.io
-  sudo ln -sf /usr/bin/docker.io /usr/local/bin/docker
-  sudo sed -i '$acomplete -F _docker docker' /etc/bash_completion.d/docker
-  ```
-
-  - By curl adn sh
-
-  ```bash
-  curl -sSL https://get.docker.com/ubuntu/ | sudo sh
-  ```
-
-After installation, restart Docker service:
-
+After installation, start the Docker service:
 ```bash
 sudo service docker start
 ```
 
-## Command
+## Common Commands
 
-See more details about [Docker command line](https://docs.docker.com/engine/reference/commandline/cli/).
+### Image Management
+```bash
+# Pull an image from Docker Hub
+sudo docker pull <image-name>:<tag>
 
-- Pull a image from Docker Hub
+# List local images
+sudo docker images
 
-  ```bash
-  sudo docker pull <Image Name: Tag>
-  ```
+# Save image to a tar file
+sudo docker save -o <filename.tar> <image-name>:<tag>
 
-- Show image files in local
+# Load image from a tar file
+sudo docker load --input <filename.tar>
 
-  ```bash
-  sudo docker images
-  ```
+# Remove an image
+sudo docker rmi <image-name>:<tag>
+```
 
-- Run (Create and Start)
+### Container Management
+```bash
+# Create and start a container
+sudo docker run [OPTIONS] <image> [COMMAND] [ARG...]
+# Common options:
+#   -it: Interactive mode with terminal
+#   -d: Run in background (detached)
+#   -p <host-port>:<container-port>: Port mapping
+#   --name <container-name>: Assign a name
 
-  Using Run to create a new Container by Image.
+# List running containers
+sudo docker ps
 
-  ```bash
-  sudo docker run [OPTIONS] <Image> [COMMAND] [ARG...]
-  ```
+# List all containers (including stopped)
+sudo docker ps -a
 
-  - Option:
-    - -it: run the Container in interactive mode
-    - -d: run the Container in background
-    - -p: port
-    - [See More](https://www.runoob.com/docker/docker-run-command.html)
+# Start a stopped container
+sudo docker start <container-id>
 
-- Check all Container
+# Stop a running container
+sudo docker stop <container-id>
 
-  It will show all Container state and .
+# Execute a command in a running container
+sudo docker exec [OPTIONS] <container-id> <command>
+# Common options:
+#   -it: Interactive mode with terminal
 
-  ```bash
-  sudo docker ps -a
-  ```
+# Remove a container
+sudo docker rm <container-id>
+```
 
-- Start a stopped Container
 
-  ```bash
-  sudo docker start <Container ID>
-  ```
+## References
 
-- Stop a Container
-
-  ```bash
-  sudo docker stop <Container ID>
-  ```
-
-- Into the Container after starting
-
-  ```bash
-  sudo docker exec [OPTIONS] <Container ID> <COMMAND> [ARG...]
-  ```
-  
-  See more information about [docker exec](https://docs.docker.com/engine/reference/commandline/exec/).
-
-- Save and load image
-
-  - Save
-
-    ```bash
-    sudo docker save -o <file.tar> <Image Name: Tag>
-    ```
-  
-  - Load
-
-    ```bash
-    sudo docker load --input <file.tar>
-    ```
-
-- Remove
-
-  - Image
-  
-    ```bash
-    sudo docker rmi <Image Name: Tag>
-    ```
-
-  - Container
-  
-    ```bash
-    sudo docker rm <Container ID>
-    ```
-
-## Reference
-
+- [Docker Documentation](https://docs.docker.com/)
 - [Docker -- 從入門到實踐](https://philipzheng.gitbook.io/docker_practice/)
-- [Docker Docs](https://docs.docker.com/)
-- [Docker 菜鳥教程](https://www.runoob.com/docker/docker-tutorial.html)
+- [Docker Tutorial](https://www.runoob.com/docker/docker-tutorial.html)
