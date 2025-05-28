@@ -44,6 +44,7 @@ This directory contains quick references and cheat sheets for common Linux comma
 - [xargs](xargs.md): Build and execute command lines from input
 
 ## System & Networking
+- [tmux](tmux.md): Terminal multiplexer for managing multiple terminal sessions
 - [smb](smb.md): Samba file sharing
 - [system time](systemTime.md): Managing system date and time
 - [CAN bus](can.md): Controller Area Network bus commands
