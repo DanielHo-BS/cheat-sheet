@@ -50,20 +50,53 @@ Design a load distribution architecture for an API handling 1 million requests p
 **For Session-aware Applications**: Use IP Hash for sticky sessions
 
 **Round Robin + Queue Architecture:**
-```
-Client Request → Load Balancer → Queue → Worker Servers
+
+```mermaid
+flowchart TD
+    A[Client Request] --> B[Load Balancer]
+    B --> C[Queue System]
+    C --> D[Worker Server 1]
+    C --> E[Worker Server 2]
+    C --> F[Worker Server N]
+    
+    B -.->|Round Robin| C
+    C -.->|FIFO| D
+    C -.->|FIFO| E
+    C -.->|FIFO| F
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e8
+    style E fill:#e8f5e8
+    style F fill:#e8f5e8
 ```
 
 #### 3. Session Management
 **Solution**: IP Hash Load Balancer + Redis + JWT
 
 **Architecture:**
-```
-Client → Load Balancer (IP Hash) → Backend Server
-                ↓
-            Redis (Session Store)
-                ↓
-            JWT (Authentication)
+
+```mermaid
+flowchart LR
+    A[Client] --> B[Load Balancer<br/>IP Hash]
+    B --> C[Backend Server 1]
+    B --> D[Backend Server 2]
+    B --> E[Backend Server N]
+    
+    C --> F[Redis<br/>Session Store]
+    D --> F
+    E --> F
+    
+    F --> G[JWT<br/>Authentication]
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#e8f5e8
+    style D fill:#e8f5e8
+    style E fill:#e8f5e8
+    style F fill:#f3e5f5
+    style G fill:#fff8e1
 ```
 
 ## Advanced Considerations
@@ -105,16 +138,28 @@ Client → Load Balancer (IP Hash) → Backend Server
 **Best Practice**: Use Redis + JWT instead of local memory storage
 
 #### JWT + Redis Architecture
-```
-Client Login Request → Authentication Server
-         ↓
-    Generate JWT Token
-         ↓
-Store JWT in Client Cookie
-         ↓
-Client API Request (with JWT) → Backend API
-         ↓
-    Redis: Check Blacklist/Cache
+
+```mermaid
+flowchart LR
+    A[Client Login Request] --> B[Authentication Server]
+    B --> C[Generate JWT Token]
+    C --> D[Store JWT in<br/>Client Cookie]
+    D --> E[Client API Request<br/>with JWT]
+    E --> F[Backend API]
+    F --> G{Redis: Check<br/>Blacklist/Cache}
+    
+    G -->|Valid| H[Process Request]
+    G -->|Invalid| I[Return 401 Unauthorized]
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#fff8e1
+    style D fill:#e8f5e8
+    style E fill:#e1f5fe
+    style F fill:#fff3e0
+    style G fill:#f3e5f5
+    style H fill:#e8f5e8
+    style I fill:#ffebee
 ```
 
 ### Traffic Spike Protection
@@ -140,16 +185,29 @@ Client API Request (with JWT) → Backend API
 An operation that produces the same result regardless of how many times it's executed.
 
 ### Idempotency Key Flow
-```
-Client Request (with Idempotency Key) → API Server
-                ↓
-        Check Redis/Database for Key
-                ↓
-    ┌─────────────────┴─────────────────┐
-    │                                    │
-Key Exists                          Key Not Found
-    │                                    │
-Return Previous Result           Execute + Store Result
+
+```mermaid
+flowchart RL
+    A[Client Request<br/>with Idempotency Key] --> B[API Server]
+    B --> C{Check Redis/Database<br/>for Key}
+    
+    C -->|Key Exists| D[Return Previous Result]
+    C -->|Key Not Found| E[Execute Operation]
+    
+    E --> F[Store Result with Key]
+    F --> G[Return New Result]
+    
+    D --> H[Response to Client]
+    G --> H
+    
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#f3e5f5
+    style D fill:#e8f5e8
+    style E fill:#fff8e1
+    style F fill:#e8f5e8
+    style G fill:#e8f5e8
+    style H fill:#e1f5fe
 ```
 
 ### Key Generation Strategies
