@@ -157,12 +157,22 @@ sequenceDiagram
 ## 5. Cache Eviction Policies
 When the cache is full, an eviction policy decides which items to discard.
 
-| Policy                           | Description                               | Best For                                     |
-| -------------------------------- | ----------------------------------------- | -------------------------------------------- |
-| **LRU (Least Recently Used)**    | Discards the item that hasn't been used for the longest time. | General purpose, most common scenarios.    |
-| **LFU (Least Frequently Used)**  | Discards the item that has been accessed the fewest times. | Caching data with clear "hot" access patterns. |
-| **FIFO (First-In, First-Out)**   | Discards the oldest item, regardless of usage. | Simple scenarios, but often inefficient.     |
-| **TTL (Time To Live)**           | Discards items that have expired.         | Ensuring data freshness and periodic updates. |
+| Policy                           | Description                               | Best For                                     | Detailed Guide |
+| -------------------------------- | ----------------------------------------- | -------------------------------------------- | -------------- |
+| **LRU (Least Recently Used)**    | Discards the item that hasn't been used for the longest time. | General purpose, most common scenarios.    | [📖 LRU Cache Detailed Guide](./Cache_LRU.md) |
+| **LFU (Least Frequently Used)**  | Discards the item that has been accessed the fewest times. | Caching data with clear "hot" access patterns. | [📖 LFU Cache Detailed Guide](./Cache_LFU.md) |
+| **FIFO (First-In, First-Out)**   | Discards the oldest item, regardless of usage. | Simple scenarios, but often inefficient.     | - |
+| **TTL (Time To Live)**           | Discards items that have expired.         | Ensuring data freshness and periodic updates. | - |
+
+### 5.1. LRU vs LFU Quick Comparison
+
+| Feature | LRU | LFU |
+|---------|-----|-----|
+| **Eviction Criteria** | Most recent usage time | Usage frequency |
+| **Best For** | Strong temporal locality | Strong frequency locality |
+| **Implementation Complexity** | Simple | More complex |
+| **Memory Overhead** | Lower | Higher (needs frequency tracking) |
+| **Typical Applications** | Browser cache, CPU cache | Popular articles, recommendation systems |
 
 ## 6. Practical Design Exercise
 
@@ -206,7 +216,25 @@ flowchart LR
   F --> G[Display on page]
 ```
 
-## 7. Further Learning
+## 7. Detailed Implementation Guide
+
+### 7.1. Cache Eviction Strategy Implementation
+- **[LRU Cache Complete Implementation](./Cache_LRU.md)** - Includes two implementation methods: OrderedDict and manual doubly linked list
+- **[LFU Cache Complete Implementation](./Cache_LFU.md)** - Includes complete frequency tracking and dual eviction strategy
+
+### 7.2. Implementation Key Points
+1. **Time Complexity**: Ensure all operations are O(1)
+2. **Memory Management**: Avoid memory leaks
+3. **Thread Safety**: Synchronization issues in multi-threaded environments
+4. **Test Coverage**: Include edge cases and concurrency tests
+
+### 7.3. Common Implementation Pitfalls
+- **LRU**: Forgetting to move nodes to the head
+- **LFU**: Forgetting to update min_freq when updating frequency
+- **Memory**: Forgetting to clean up pointers when removing nodes
+- **Concurrency**: Read/write operations without proper lock protection
+
+## 8. Further Learning
 - Redis Cache Patterns
 - ByteByteGo on YouTube: "Why and How to Cache"
 - Practical Project: Implement an LRU cache with TTL in Python using Flask and Redis.
