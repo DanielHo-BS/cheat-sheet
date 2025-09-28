@@ -20,6 +20,9 @@ This directory contains concise cheat sheets and quick references for common Pyt
 - [re](re.md): Regular expressions in Python
 - [requests](requests.md): HTTP requests made easy
 - [paramiko](paramiko.md): SSHv2 protocol
+- [dict](dict.md)
+- [OrderedDict](OrderedDict.md)
+- [deque](deque.md)
 
 ## Tools & Utilities
 
